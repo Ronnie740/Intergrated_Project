@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>ALU Advantage</title>
   </head>
   <body>
@@ -26,27 +26,28 @@
           <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
           <li><a href="#">Home</a></li>
           <li><a href="#">The Alu Advantage</a></li>
-          <li><a href="#">Undergraduate</a></li>
+          <li><a href="mauritius.html">Undergraduate</a></li>
           <li><a href="#">Student Life</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </div>
       <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
-      
-      <!--Small screen menu-->
-      <div class="float-right md:hidden relative pr-4">
-          <button class=" hover:bg-gray-600 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none " onclick="showNav(), hideNav()"> 
+      <!--Small Screen-->
+      <!--Menu Icon Small screen-->
+      <div class="float-right md:hidden relative pr-4" >
+          <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
             </svg>
           </button>
         </div>
-          <div class=" hidden bg-gray-900 md:hidden w-full absolute mt-20" id="nav" >
+        <!--Sm NavLinks-->
+          <div class=" hidden bg-gray-900 w-full absolute mt-20" id="navSm" >
             <div class="w-full">
 
               <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Home</span></a></div>
               <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>The Alu Advantage</span></a></div>
-              <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Undergraduate</span></a></div>
+              <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="mauritius.html"> <span>Undergraduate</span></a></div>
               <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Student Life</span></a></div>
               <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>About</span></a></div>
             </div>
@@ -93,72 +94,90 @@
             <img class="h-full w-full object-cover rounded-md" src="./images/pic_1.jpeg" alt="img"/>
            </div> 
            <div class="relative flex h-full overflow-x-auto ">
-             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle">
                <p class="text-2xl">01</p>
                <p class="text-xl">21st Century Skills</p>
-               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
+               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><button class="focus:outline-none"  id="l1">Learn More</button></div>
              </div>
            </div>
+           <!-- test overlay -->
+             <div class="hidden absolute bg-blue-500 w-full h-full rounded-md   flex my-auto text-center bg-opacity-25" id="overlay">ALU prioritizes the development of 21st century skills—things like self-leading, leading others, entrepreneurial thinking, quantitative reasoning, critical thinking, managing complex projects, and communication.</div>
+            <!-- End -->
          </div> 
         <div class="relative rounded-md h-40 w-full flex items-center justify-center" >
          <div class="absolute w-full h-full ">
            <img class="h-full w-full object-cover rounded-md" src="./images/pic_2.jpg" alt="img"/>
           </div> 
           <div class="relative flex h-full overflow-x-auto ">
-            <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+            <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle2">
               <p class="text-2xl">02</p>
               <p class="text-xl">Personalized learning</p>
-              <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
+              <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center"><button class="focus:outline-none"  id="l2">Learn More</button></div>
             </div>
           </div>
+          <!-- test overlay -->
+          <div class="hidden absolute bg-blue-500 w-full h-full rounded-md flex my-auto text-center bg-opacity-25" id="overlay2">At ALU, students benefit from an individualized, mission-driven method that’s just as effective and impactful as traditional ones. You can tailor your learning experience to your unique interests and passions with guidance from skilled mentors.</div>
+          <!-- End -->
         </div>
         <div class="relative rounded-md h-40 w-full flex items-center justify-center" >
           <div class="absolute w-full h-full ">
             <img class="h-full w-full object-cover rounded-md" src="./images/pic_3.jpg" alt="img"/>
            </div> 
            <div class="relative flex h-full overflow-x-auto ">
-             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle3">
                <p class="text-2xl">03</p>
                <p class="text-xl">Values and Character</p>
-               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
-             </div>
-           </div>
+               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center"><button class="focus:outline-none"  id="l3">Learn More</button></div>
+            </div>
+          </div>
+          <!-- test overlay -->
+          <div class="hidden absolute bg-blue-500 w-full h-full rounded-md flex my-auto text-center bg-opacity-25" id="overlay3">As technology becomes more ingrained in everyday life, human values and traits like ethics, empathy, passion, courage, teamwork, integrity, curiosity, initiative, persistence, and adaptability become more valuable—perhaps even more than “facts and figures” (which computers can learn).</div>
+          <!-- End -->
          </div>
          <div class="relative rounded-md h-40 w-full flex items-center justify-center" >
           <div class="absolute w-full h-full ">
             <img class="h-full w-full object-cover rounded-md" src="./images/pic_4.jpg" alt="img"/>
            </div> 
            <div class="relative flex h-full overflow-x-auto ">
-             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle4">
                <p class="text-2xl">04</p>
                <p class="text-xl ">Career Development and<br/> Work Experience</p>
-               <div class="border p-1 w-3/5 ml-10 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
-             </div>
-           </div>
+               <div class="border p-1 w-3/5 ml-10 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><button class="focus:outline-none" id="l4">Learn More</button></div>
+              </div>
+            </div>
+            <!-- test overlay -->
+            <div class="hidden absolute bg-blue-500 w-full h-full rounded-md flex my-auto text-center bg-opacity-25" id="overlay4">Leadership skills alone are not enough to make maximum impact. Effective leaders require a powerful network of peers, investors, mentors, and more to achieve their full potential.</div>
+            <!-- End -->
          </div>
         <div class="relative rounded-md h-40 w-full flex items-center justify-center" >
           <div class="absolute w-full h-full ">
             <img class="h-full w-full object-cover rounded-md" src="./images/pic_5.jpg" alt="img"/>
            </div> 
            <div class="relative flex h-full overflow-x-auto  ">
-             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle5">
                <p class="text-2xl">05</p>
                <p class="text-xl pr-12 pl-12">A Network</p>
-               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
-             </div>
-           </div>
+               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><button class="focus:outline-none" id="l5">Learn More</button></div>
+              </div>
+            </div>
+            <!-- test overlay -->
+            <div class="hidden absolute bg-blue-500 w-full h-full rounded-md flex my-auto text-center bg-opacity-25" id="overlay5">Leadership skills alone are not enough to make maximum impact. Effective leaders require a powerful network of peers, investors, mentors, and more to achieve their full potential.</div>
+            <!-- End -->
          </div>
          <div class="relative rounded-md h-40 w-full flex items-center justify-center" >
           <div class="absolute w-full h-full ">
             <img class="h-full w-full object-cover rounded-md" src="./images/pic_6.jpg" alt="img"/>
            </div> 
            <div class="relative flex h-full overflow-x-auto ">
-             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3">
+             <div class="rounded-2xl bg-blue-500 bg-opacity-25 w-full text-center p-3" id="skillTitle6">
                <p class="text-2xl">06</p>
                <p class="text-xl">Stamp of Approval</p>
-               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><a class="" href="#">Learn More</a></div>
-             </div>
-           </div>
+               <div class="border p-3 w-3/4 ml-6 rounded-sm mt-3 hover:bg-red-700 cursor-pointer text-center "><button class="focus:outline-none" id="l6">Learn More</button></div>
+              </div>
+            </div>
+            <!-- test overlay -->
+            <div class="hidden absolute bg-blue-500 w-full h-full rounded-md flex my-auto text-center bg-opacity-25" id="overlay6">Research known as the Signaling Theory of Universities shows that the greatest value that a university degree provides is its “stamp” of credibility. It’s a signal to potential employers that the graduate is an intelligent, work-ready individual.</div>
+            <!-- End -->
          </div>
       </div>
       <!--The Alu Difference-->

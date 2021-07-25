@@ -22,3 +22,19 @@ ul li:hover {
   overflow: hidden;
   align-items: center;
 }
+#overlay_txt {
+  position: absolute;
+  top: 40vh;
+}
+@media (min-width: 768px) {
+  #overlay_txt {
+    position: absolute;
+    top: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  #overlay_txt {
+    position: absolute;
+    top: 80vh;
+  }
+}
