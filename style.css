@@ -29,22 +29,24 @@ ul li:hover {
 @media (min-width: 768px) {
   #overlay_txt {
     position: absolute;
-    top: 70vh;
+    top: 50vh;
   }
 }
 @media (min-width: 1024px) {
   #overlay_txt {
     position: absolute;
-    top: 90vh;
+    top: 80vh;
   }
 }
 @media (max-width: 375px) {
   #overlay_txt{
+    position: absolute;
     top:20vh;
   }
 }
-@media (max-width:466px){
+@media (max-width:600px){
 #overlay_txt{
+  position: absolute;
   top:30vh;
 }
 }
