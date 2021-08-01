@@ -1,72 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./computing_page/computing.css" />
-    <link rel="stylesheet" href="style.css">
+    <title>ALC Computing</title>  
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/02dd437eab.js" crossorigin="anonymous" defer></script>
-    <script id="dsq-count-scr" src="//alu-disqus-com.disqus.com/count.js" async></script>
-    <title>ALU Computing</title>
+    <link rel="stylesheet" href="./computing.css">
 </head>
-<body>
-    <!--Navigation-->
-    <nav class="flex-grow items-center">
-      
-        <!--Logo-->
-        <div class=" float-left" id="logo">
-        <img class="mt-2 mx-auto" src="./images/Logo.jpg" alt="Logo" width="200px" height="200px" />
-        </div>
-        <!--Page menu-->
-        <div class="float-right ">
-        <ul class="hidden md:block flex-shrink">
-            <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">The Alu Advantage</a></li>
-            <li><a href="#">Undergraduate</a></li>
-            <li><a href="#">Student Life</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        </div>
-        <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
-        <!--Small Screen-->
-        <!--Menu Icon Small screen-->
-        <div class="float-right md:hidden relative pr-4" >
-            <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-            </svg>
-            </button>
-        </div>
-        <!--Sm NavLinks-->
-            <div class=" hidden z-10 bg-gray-900 w-full absolute mt-20 rounded" id="navSm" >
-            <div class="w-full">
 
-                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="index.html"> <span>Home</span></a></div>
-                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>The Alu Advantage</span></a></div>
-                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="computing.html"> <span>Undergraduate</span></a></div>
-                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Student Life</span></a></div>
-                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>About</span></a></div>
+<body>
+    
+    <main class="bg-white" id="main">
+        <!-- Creates a container with flex to hold the logo and navbar links -->
+        <div class="relative z-30 lg:mx-20 flex justify-between items-center">
+            <div>
+                <a href="index.html">
+                    <img class="my-5" src="./computing_images/download_20191021_212902.jpg" alt="ALU Logo" width="250px" height="250px">
+                </a>
             </div>
+
+            <div class="px-4 md:hidden cursor-pointer" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 172 172"
+                    style=" fill: #d00d2c">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                        <g fill="#d00d2c">
+                            <path
+                                d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Navbar links section -->
+            <div class="hidden md:inline-block" id="navlinks">
+                <div class="sm:my-8 md:my-10 lg:my-12">
+                    <a href="index.html" class="mr-5 md:mr-3 lg:mr-5 text-xs md:text-tiny lg:text-sm"
+                        id="links">HOME</a>
+                    <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">THE ALU
+                        ADVANTAGE</a>
+                    <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">UNDERGRADUATE</a>
+                    <a href="student-life.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm"
+                        id="links">STUDENT LIFE</a>
+                    <a href="#" class="ml-5 md:ml-3 md:mr-4 lg:ml-5 text-xs md:text-tiny lg:text-sm"
+                        id="links">ABOUT</a>
+                </div>
             </div>
         </div>
-     </nav>
-     <main>
-         <!-- Heading -->
-        <div  class= "text-center text-2xl md:text-4xl w-full">
+       <!-- Heading-->
+        <div  class= "text-center text-2xl md:text-4xl" id="head">
             <i class="fas fa-code"></i>
             <h2 class="font-bold text-2xl md:text-4xl">Hello World!</h2>
         </div>
       <!-- Academic Head-->
        <div class="mt-10 lg:mt-28 w-full h-auto flex flex-wrap justify-between items-center">
         <div class="mt-10 w-full lg:w-3/6 items-center self-center">
-        <img class="mx-auto h-96 md:h-96 lg:w-full lg:-left-10 lg:h-auto rounded-full relative shadow-2xl" src="./computing_page/computing_images/stephen1.jpg" alt="ALC Academic Director">
+        <img class="mx-auto h-96 md:h-96 lg:w-full lg:-left-10 lg:h-auto rounded-full relative shadow-2xl" src="./computing_images/stephen1.jpg" alt="ALC Academic Director">
        </div>
        <div class="mx-10 my-10 lg:mx-0 lg:my-0 w-auto lg:w-3/6 self-center">
         <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">Stephen Naicken</h1>
@@ -216,7 +214,7 @@
  
        <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
         <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
-            <img class="image__img h-auto" src="./computing_page/computing_images/old-campus-banner (1).jpg" alt="Website">
+            <img class="image__img h-auto" src="./computing_images/old-campus-banner (1).jpg" alt="Website">
             <div class="image__overlay image__overlay--blur lg:text-4xl">
                 <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="#" target="parent">Explore</a>
             </div> 
@@ -231,7 +229,7 @@
         <h1 class="text-center text-2xl lg:text-4xl font-bold">Security Landscapes</h1>
      <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
         <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
-            <img class="image__img" src="./computing_page/computing_images/old-campus-banner (1).jpg" alt="Website">
+            <img class="image__img" src="./computing_images/old-campus-banner (1).jpg" alt="Website">
             <div class="image__overlay image__overlay--blur lg:text-4xl">
                 <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="./course specifications/Security_Landscapes.docx" target="parent">Explore</a>
             </div> 
@@ -245,7 +243,7 @@
  
       <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
         <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
-            <img class="image__img" src="./computing_page/computing_images/old-campus-banner (1).jpg" alt="Website">
+            <img class="image__img" src="./computing_images/old-campus-banner (1).jpg" alt="Website">
             <div class="image__overlay image__overlay--blur lg:text-4xl">
                 <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="./course specifications/Programming.pdf" target="parent">Explore</a>
             </div> 
@@ -259,7 +257,7 @@
         <h1 class="font-bold text-2xl text-center lg:text-4xl">Database Development</h1>
         <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
             <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
-                <img class="image__img" src="./computing_page/computing_images/old-campus-banner (1).jpg" alt="Website">
+                <img class="image__img" src="./computing_images/old-campus-banner (1).jpg" alt="Website">
                 <div class="image__overlay image__overlay--blur lg:text-4xl">
                     <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="https://www.gcu.ac.uk/study/modules/info/?Module=M2I322954"  target="parent">Explore</a>
                 </div> 
@@ -279,7 +277,7 @@
         <div class="profile-box mx-auto">
             <h4>Nathan</h4>
             <small>Year 4</small>
-            <img src="./computing_page/computing_images/Nathan.jpeg">
+            <img src="./computing_images/Nathan.jpeg">
             <div class="social-box">
                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
@@ -294,7 +292,7 @@
         <div class=" profile-box mx-auto">
             <h4>  Rudo Togara</h4>
             <small>Cloud Solutions Specialist</small>
-            <img src="./computing_page/computing_images/Rudo.jpeg">
+            <img src="./computing_images/Rudo.jpeg">
             <div class="social-box">
                 <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
                     <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
@@ -310,7 +308,7 @@
         <div class=" profile-box mx-auto">
             <h4>Cynthia Iraduka</h4>
             <small>Software Architect</small>
-            <img src="./computing_page/computing_images/Cynthia.jpeg">
+            <img src="./computing_images/Cynthia.jpeg">
             <div class="social-box">
                 <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
                     <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
@@ -325,7 +323,7 @@
         <div class=" profile-box mx-auto">
             <h4>  Esther Babalola</h4>
             <small>Software Product Developer</small>
-            <img src="./computing_page/computing_images/stephen1.jpg">
+            <img src="./computing_images/stephen1.jpg">
             <div class="social-box">
                    <a href="https://www.instagram.com/alueducation/"><i class="fab fa-facebook"></i></a>
                    <a href="https://www.instagram.com/alueducation/"><i class="fab fa-instagram"></i></a>
@@ -361,6 +359,173 @@
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
    </div> 
-     </main>
+</main>
+
+    <!-- This is used to create the parallax scroll on the footer. Courtesy of https://medium.com/swlh/how-to-responsive-parallax-footer-bc3ccb3ce8f1 -->
+    <div id="placeholder"></div>
+
+    <div class="mt-0 lg:mt-28 w-full overflow-hidden grid grid-cols-3 grid-rows-1 items-center" id="footer">
+        <div class="grid grid-rows-1 col-span-3">
+            <a href="index.html">
+                <img class="sm:hidden mx-auto w-72 h-auto" src="./computing_images/download_20191021_212902.jpg" alt="ALU Logo">
+            </a>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <img class="invisible sm:visible mx-auto" src="./computing_images/download_20191021_212902.jpg" alt="ALU Logo" width="350px"
+                    height="350px">
+            </a>
+            <p class="text-white ml-2 sm:mx-4 lg:mx-14 text-xs lg:text-base text-justify">
+                By 2035, ALU aims to train three million ethical and entrepreneurial leaders for Africa and the rest of
+                the world. It
+                employs a personalized, student-driven, project-based, and mission-oriented approach to creating agile,
+                lifelong
+                learners capable of adapting to a changing world.
+            </p>
+            <div class="mt-6 text-white ml-2 font-bold text-xs sm:text-xs md:text-sm lg:text-lg text-center">Follow ALU
+                on Social Media</div>
+            <div class="mx-3 sm:mx-5 md:mx-11 lg:mx-28 my-4 w-36 sm:w-72">
+                <a href="https://facebook.com/alu.education"><span id="social"
+                        class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-facebook"></i></span></a>
+                <a href="https://www.instagram.com/alueducation/"><span id="social"
+                        class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-instagram"></i></span></a>
+                <a href="https://twitter.com/alueducation"><span id="social"
+                        class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-twitter"></i></span></a>
+                <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w"><span id="social"
+                        class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-youtube"></i></span></a>
+            </div>
+        </div>
+
+        <div class="text-white">
+            <table class="table-auto sm:m-auto">
+                <thead>
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">QUICK LINKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">About</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">The ALU Advantage</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Admissions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Undergraduate</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Computing</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Accessibility</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdab1rkqS_1Ofd-n0jAAF7yzSDRdM0VTUIcfDPCl1tLwc0x-w/viewform?usp=pp_url">Report
+                                a Concern</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="maps.html">Maps & Directions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Policies</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Privacy & Security</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-white sm:pb-7">
+            <table class="table-auto lg:w-20">
+                <thead class="text-left">
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">CONTACT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALC Mauritius<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm">African Leadership
+                                Campus,<br>Powder Mill Rd,<br>Pamplemousses, 21001,<br>Mauritius</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALU Rwanda<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm">Bumbogo,<br>Kigali Innovation
+                                City,<br>Rwanda</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Admissions<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="mailto:admissions@alueducation.com">admissions@alueducation.com</a><br><a
+                                    href="tel://+23054447827">+230 5444 7827</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">General Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="mailto:info@alueducation.com">info@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Media Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="marketing@alueducation.com">marketing@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Front Desk<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="tel://+23054434951">Mauritius: +230 5443 4951</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Careers<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="hiring@alueducation.com">hiring@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div
+            class="sm:mx-0 md:mx-5 lg:mx-14 pt-5 pb-5 col-span-3 grid grid-cols-6 text-white bg-transparent border-t-2 border-white text-sm text-center">
+            <div class="sm:mx-0 md:mx-5 lg:mx-12 col-span-6 grid grid-cols-6 text-xs md:text-xs lg:text-sm">
+                <p class="col-span-3 sm:col-span-3 md:col-span-2 lg:col-span-1">© 2021 <b>ALU</b>. All Rights Reserved.
+                </p>
+                <!-- <a href="#" id="links">Accessibility</a>
+                    <a href="#" id="links">Report a Concern</a>
+                    <a href="maps.html" id="links">Maps & Driections</a>
+                    <a href="#" id="links">Policies</a>
+                    <a href="#" id="links">Privacy & Security</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+    <script src="https://kit.fontawesome.com/02dd437eab.js" crossorigin="anonymous"></script>
+    <script id="dsq-count-scr" src="//alu-disqus-com.disqus.com/count.js" async></script>
 </body>
+
 </html>
